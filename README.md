@@ -10,3 +10,7 @@ to honor my uncle in a way that would make family and friends happy!
 <b>Backend:</b> Node.js, AWS S3
 
 <b>Hosting:</b> Google Cloud
+
+<a href="https://iandebright-bd393.web.app" target="_blank">
+View the project here
+</a>
