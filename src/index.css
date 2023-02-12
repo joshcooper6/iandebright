@@ -1,0 +1,64 @@
+body, html {
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fadein {
+  animation: fadein 1s linear forwards;
+}
+
+.fadeinfast {
+  animation: fadein 300ms linear forwards;
+}
+
+.delay {
+  animation-delay: 500ms;
+}
+
+.transease {
+  transition: 1s ease;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column {
+  flex: 25%;
+  flex-wrap: wrap;
+  max-width: 25%;
+  padding: 0 4px;
+  justify-content: space-between;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+@keyframes fadein {
+  from { opacity: 0 } to { opacity: 1 }
+}
+
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
